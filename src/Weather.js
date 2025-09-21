@@ -5,9 +5,9 @@ import WeatherForecast from "./WeatherForecast.js";
 import axios from "axios";
 import "./Weather.css";
 
-export default function Weather(props) {
+export default function Weather() {
   const [weatherData, setWeatherData] = useState({ ready: false });
-  const [city, setCity] = useState(props.defaultCity);
+  const [city, setCity] = useState("");
 
   function handleResponse(response) {
     setWeatherData({
@@ -35,7 +35,11 @@ export default function Weather(props) {
   function search() {
     const apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
+    try {
+      axios.get(apiUrl).then(handleResponse);
+    } catch (error) {
+      console.log(error.message);
+    }
   }
 
   return (
@@ -51,7 +55,6 @@ export default function Weather(props) {
               onChange={handleCityChange}
               required
               value={city}
-              pattern="[\p{L}\s'-]{2,50}"
             />
           </div>
           <div className="col-5">

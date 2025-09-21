@@ -21,8 +21,11 @@ export default function WeatherForecast({ coordinates }) {
     let longitude = coordinates.lon;
     let latitude = coordinates.lat;
     let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
-
-    axios.get(apiUrl).then(handleResponse);
+    try {
+      axios.get(apiUrl).then(handleResponse);
+    } catch (error) {
+      console.log(error.message);
+    }
   }
 
   if (loaded) {
