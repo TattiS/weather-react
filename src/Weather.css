@@ -1,0 +1,103 @@
+.Weather {
+  font-family: arial, sans-serif;
+  border: 1px solid #dadde1;
+  padding: 16px;
+  border-radius: 4px;
+  color: rgb(135, 135, 135);
+}
+
+.Weather h1 {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 20px 0 0 0;
+  line-height: 29px;
+}
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Weather li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+
+.Weather .temperature {
+  font-weight: bold;
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 64px;
+  margin-left: 5px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.Weather canvas {
+  margin: 10px auto;
+}
+
+.Weather .unit {
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+}
+
+.Weather .form-control {
+  background: rgb(249, 247, 254);
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px;
+  color: rgba(39, 33, 66, 0.4);
+  display: inline-block;
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+  padding: 15px 20px;
+  appearance: none;
+  outline-offset: -2px;
+  background-clip: padding-box;
+  background-color: var(--bs-body-bg);
+  font-weight: 400;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+  height: 50px;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.form-control:focus {
+  background-color: var(--bs-body-bg);
+  border-color: rgb(134, 183, 254);
+  box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 0.25rem;
+  color: var(--bs-body-color);
+  outline: 0px;
+}
+.form-control:disabled {
+  background-color: var(--bs-secondary-bg);
+  opacity: 1;
+}
+
+.Weather .SubmitBtn {
+  cursor: pointer;
+  background: rgb(136, 93, 241);
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  padding: 15px 0px;
+  appearance: button;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100% !important;
+  margin: 0px;
+  box-sizing: border-box;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { getWeatherInfo } from "./WeatherEngine";
 import "./WeatherSearch.css";
