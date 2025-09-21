@@ -14,11 +14,11 @@ export default function WeatherInfo(props) {
         </li>
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
-      <ul className="flex-row">
-        <li>
+      <ul className="row col-6">
+        <li class="col-6">
           Humidity: <span className="highlighted">{props.data.humidity}%</span>
         </li>
-        <li>
+        <li class="col-6">
           Wind: <span className="highlighted">{props.data.wind} km/h</span>
         </li>
       </ul>
