@@ -30,7 +30,7 @@ export default function WeatherForecast({ coordinates }) {
       <div className="WeatherForecast">
         <div className="row">
           {forecast.map(function (dailyForecast, index) {
-            if (index < 5) {
+            if (index % 8 === 0 && index < 40) {
               return (
                 <div className="col" key={index}>
                   <WeatherForecastDay data={dailyForecast} />

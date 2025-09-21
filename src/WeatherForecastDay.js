@@ -1,7 +1,7 @@
-export default function WeatherForecastDay(data) {
+export default function WeatherForecastDay({ data }) {
   console.log(data);
   const date = new Date(data.dt * 1000);
-  const dayOfWeek = date.toLocaleDateString("uk-UA", { weekday: "long" });
+  const dayOfWeek = date.toDateString();
   return (
     <div className="WeatherForecastDay">
       <div className="forecastDayofWeek">{dayOfWeek}</div>
