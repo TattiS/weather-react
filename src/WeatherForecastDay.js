@@ -1,7 +1,8 @@
 export default function WeatherForecastDay({ data }) {
   console.log(data);
   const date = new Date(data.dt * 1000);
-  const dayOfWeek = date.toDateString();
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const dayOfWeek = days[date.getDay()];
   return (
     <div className="WeatherForecastDay">
       <div className="forecastDayofWeek">{dayOfWeek}</div>

@@ -1,0 +1,20 @@
+.WeatherInfo {
+  margin-top: 20px;
+}
+
+.WeatherInfo h1 {
+  color: rgb(39, 33, 66);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 20px 0px 10px;
+  margin-bottom: 0.5rem;
+  margin-top: 0px;
+  box-sizing: border-box;
+}
+
+.highlighted {
+  color: rgb(246, 82, 130);
+  font-weight: 400;
+  box-sizing: border-box;
+}
